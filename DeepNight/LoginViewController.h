@@ -17,4 +17,8 @@
  name
  */
 @property (copy, nonatomic) NSString *name;
+/**
+ account
+ */
+@property (copy, nonatomic) NSString *account;
 @end

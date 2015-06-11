@@ -639,9 +639,9 @@
         <image name="try_btn" width="156" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sb4-fF-Qab"/>
         <segue reference="iWf-Ns-tsE"/>
-        <segue reference="LDE-ts-ugV"/>
-        <segue reference="fTi-uy-Ov3"/>
+        <segue reference="Sb4-fF-Qab"/>
+        <segue reference="lc5-CO-bds"/>
+        <segue reference="ji4-h5-fay"/>
     </inferredMetricsTieBreakers>
 </document>
