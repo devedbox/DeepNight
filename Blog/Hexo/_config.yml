@@ -1,0 +1,109 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 站点信息
+title: devedbox
+subtitle: 用平静的心抚平浮躁的世界
+description: devedbox'blog | iOS | Objective-C | Swift | Cocoa
+author: devedbox
+language: zh-hk
+email: devedbox@gmail.com
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: devedbox.com #你的域名
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory 文件目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing # 写文章选项
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight: # 代码高亮
+  enable: true
+  line_number: true # 是否显示行号
+  tab_replace:
+
+# Category & Tag 目录和标签
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 归档设置
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 2
+category: 2
+tag: 2
+
+# Date / Time format 时间和日期格式
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination 页面
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions 扩展：插件和皮肤
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: next
+
+# Disqus  disqus评论,  与多说类似, 国内一般使用多说
+disqus_shortname: devilwwj
+
+plugins: #插件，例如生成 RSS 和站点地图的
+- hexo-generator-feed
+- hexo-generator-sitemap
+
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+#sitemap
+sitemap:
+    path: sitemap.xml
+
+# Markdown语法
+## https://github.com/chjj/marked
+markdown:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
+# Deployment 部署配置
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: https://github.com/devedbox/devedbox.github.io.git #你的github page 仓库
+  branch: master
